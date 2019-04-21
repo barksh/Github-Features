@@ -1,0 +1,15 @@
+language:
+ - node_js
+ - python
+
+python:
+ - '3'
+
+node_js:
+ - '10'
+
+services:
+ - docker
+
+script:
+ - make build
