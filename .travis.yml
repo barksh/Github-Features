@@ -1,9 +1,5 @@
 language:
  - node_js
- - python
-
-python:
- - '3'
 
 node_js:
  - '10'
@@ -11,11 +7,5 @@ node_js:
 services:
  - docker
 
-stages:
-  - name: test
-    script:
-      - echo "test"
-  - name: deploy
-    if: branch = master
-    script:
-      - echo "deploy"
+script:
+ - echo "test"
