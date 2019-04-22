@@ -12,10 +12,10 @@ services:
  - docker
 
 stages:
-  - name: hello
+  - name: test
     script:
-      - echo "hello"
-  - name: world
+      - echo "test"
+  - name: deploy
     if: branch = master
     script:
-      - echo "world"
+      - echo "deploy"
