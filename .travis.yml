@@ -11,5 +11,11 @@ node_js:
 services:
  - docker
 
-script:
- - make build
+stages:
+  - name: hello
+    script:
+      - echo "hello"
+  - name: world
+    if: branch = master
+    script:
+      - echo "world"
